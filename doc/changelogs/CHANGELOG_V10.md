@@ -10,6 +10,7 @@
 </tr>
 <tr>
 <td valign="top">
+<a href="#10.15.1">10.15.1</a><br/>
 <a href="#10.15.0">10.15.0</a><br/>
 <a href="#10.14.2">10.14.2</a><br/>
 <a href="#10.14.1">10.14.1</a><br/>
@@ -47,6 +48,99 @@
   * [0.10.x](CHANGELOG_V010.md)
   * [io.js](CHANGELOG_IOJS.md)
   * [Archive](CHANGELOG_ARCHIVE.md)
+
+<a id="10.15.1"></a>
+## 2019-01-08, Version 10.15.1 'Dubnium' (LTS), @codebytere
+
+### Notable Changes
+
+* **doc**:
+  * add oyyd to collaborators (Ouyang Yadong) [#24300](https://github.com/nodejs/node/pull/24300)
+
+### Commits
+
+* [[`0c206e0d6d`](https://github.com/nodejs/node/commit/0c206e0d6d)] - **benchmark**: support more options in startup benchmark (Joyee Cheung) [#24220](https://github.com/nodejs/node/pull/24220)
+* [[`9a64ceca39`](https://github.com/nodejs/node/commit/9a64ceca39)] - **buffer**: fix writeUInt16BE range check (Brian White) [#24208](https://github.com/nodejs/node/pull/24208)
+* [[`4e21eb4004`](https://github.com/nodejs/node/commit/4e21eb4004)] - **build**: lint commit message in separate Travis job (Richard Lau) [#24254](https://github.com/nodejs/node/pull/24254)
+* [[`042749fd23`](https://github.com/nodejs/node/commit/042749fd23)] - **build**: only try to find node when it's needed by the target (Joyee Cheung) [#24115](https://github.com/nodejs/node/pull/24115)
+* [[`72d2d2cd8e`](https://github.com/nodejs/node/commit/72d2d2cd8e)] - **build**: expose more openssl categories for addons (Jonathan Cardoso Machado) [#23344](https://github.com/nodejs/node/pull/23344)
+* [[`5dfc1bb46c`](https://github.com/nodejs/node/commit/5dfc1bb46c)] - **build,tools**: update make-v8.sh for s390x (Refael Ackermann) [#23839](https://github.com/nodejs/node/pull/23839)
+* [[`04f8d6bffd`](https://github.com/nodejs/node/commit/04f8d6bffd)] - **child_process**: allow 'http\_parser' monkey patching again(Jimb Esser) [#24006](https://github.com/nodejs/node/pull/24006)
+* [[`07b9a663e0`](https://github.com/nodejs/node/commit/07b9a663e0)] - **console**: cover .assert with single argument (Morgan Roderick) [#24188](https://github.com/nodejs/node/pull/24188)
+* [[`4749640b2e`](https://github.com/nodejs/node/commit/4749640b2e)] - **crypto**: reduce memory usage of SignFinal (Tobias Nießen) [#23427](https://github.com/nodejs/node/pull/23427)
+* [[`17b55bf1a4`](https://github.com/nodejs/node/commit/17b55bf1a4)] - **deps**: V8: cherry-pick 52a9e67 (Ali Ijaz Sheikh) [#25027](https://github.com/nodejs/node/pull/25027)
+* [[`4209e122b7`](https://github.com/nodejs/node/commit/4209e122b7)] - **doc**: correct async\_hooks resource names (Gerhard Stoebich) [#24001](https://github.com/nodejs/node/pull/24001)
+* [[`d2cc9d72b6`](https://github.com/nodejs/node/commit/d2cc9d72b6)] - **doc**: sort bottom-of-file markdown links (Sam Roberts) [#24679](https://github.com/nodejs/node/pull/24679)
+* [[`b4c1d8273c`](https://github.com/nodejs/node/commit/b4c1d8273c)] - **doc**: update fs.open() changes record for optional 'flags'(Rod Vagg) [#24240](https://github.com/nodejs/node/pull/24240)
+* [[`cf209171c9`](https://github.com/nodejs/node/commit/cf209171c9)] - **doc**: add links to Stream section (Dmitry Igrishin) [#24301](https://github.com/nodejs/node/pull/24301)
+* [[`0260db525a`](https://github.com/nodejs/node/commit/0260db525a)] - **doc**: correct async\_hooks sample outputs (Gerhard Stoebich) [#24050](https://github.com/nodejs/node/pull/24050)
+* [[`c8d2635ed1`](https://github.com/nodejs/node/commit/c8d2635ed1)] - **doc**: add oyyd to collaborators (Ouyang Yadong) [#24300](https://github.com/nodejs/node/pull/24300)
+* [[`b305db8634`](https://github.com/nodejs/node/commit/b305db8634)] - **doc**: edit BUILDING.md (Rich Trott) [#24243](https://github.com/nodejs/node/pull/24243)
+* [[`abe3edad48`](https://github.com/nodejs/node/commit/abe3edad48)] - **doc**: fix code examples in stream.md (Grant Carthew) [#24112](https://github.com/nodejs/node/pull/24112)
+* [[`31441f42c4`](https://github.com/nodejs/node/commit/31441f42c4)] - **doc**: describe what tls servername is for (Sam Roberts) [#24236](https://github.com/nodejs/node/pull/24236)
+* [[`cc688bb23f`](https://github.com/nodejs/node/commit/cc688bb23f)] - **doc**: fix some inconsistent use of hostname (Sam Roberts) [#24199](https://github.com/nodejs/node/pull/24199)
+* [[`6f3bc0d28a`](https://github.com/nodejs/node/commit/6f3bc0d28a)] - **doc, test**: document and test vm timeout escapes (James M Snell) [#23743](https://github.com/nodejs/node/pull/23743)
+* [[`3966b698f6`](https://github.com/nodejs/node/commit/3966b698f6)] - **lib**: combine contructor, tag, Object into a function (Paul Isache) [#24171](https://github.com/nodejs/node/pull/24171)
+* [[`897114bf94`](https://github.com/nodejs/node/commit/897114bf94)] - **net**: partially revert "simplify Socket.prototype.\_final"(Anna Henningsen) [#24288](https://github.com/nodejs/node/pull/24288)
+* [[`10a27277ad`](https://github.com/nodejs/node/commit/10a27277ad)] - **net**: simplify Socket.prototype.\_final (Anna Henningsen) [#24075](https://github.com/nodejs/node/pull/24075)
+* [[`9a69d030ce`](https://github.com/nodejs/node/commit/9a69d030ce)] - **src**: reuse std::make\_unique (alyssaq) [#24132](https://github.com/nodejs/node/pull/24132)
+* [[`44a1993e9d`](https://github.com/nodejs/node/commit/44a1993e9d)] - **src**: avoid extra `Persistent` in `DefaultTriggerAsyncIdScope` (Anna Henningsen) [#23844](https://github.com/nodejs/node/pull/23844)
+* [[`15d05bbf02`](https://github.com/nodejs/node/commit/15d05bbf02)] - **src**: simplify `TimerFunctionCall()` in `node\_perf.cc` (Anna Henningsen) [#23782](https://github.com/nodejs/node/pull/23782)
+* [[`383d512ed7`](https://github.com/nodejs/node/commit/383d512ed7)] - **src**: memory management using smart pointer (Uttam Pawar) [#23628](https://github.com/nodejs/node/pull/23628)
+* [[`ffb4087def`](https://github.com/nodejs/node/commit/ffb4087def)] - **src**: remove function hasTextDecoder in encoding.js (Chi-chi Wang) [#23625](https://github.com/nodejs/node/pull/23625)
+* [[`6ce4ef3387`](https://github.com/nodejs/node/commit/6ce4ef3387)] - **stream**: make `.destroy()` interact better with write queue (Anna Henningsen) [#24062](https://github.com/nodejs/node/pull/24062)
+* [[`1bceb9d397`](https://github.com/nodejs/node/commit/1bceb9d397)] - **test**: fix test-repl-envvars (Anna Henningsen) [#25226](https://github.com/nodejs/node/pull/25226)
+* [[`d04c3c2718`](https://github.com/nodejs/node/commit/d04c3c2718)] - **test**: move benchmark tests out of main test suite (Rich Trott) [#24265](https://github.com/nodejs/node/pull/24265)
+* [[`09bb49165f`](https://github.com/nodejs/node/commit/09bb49165f)] - **test**: fix strictEqual argument order (Martin Kask) [#24153](https://github.com/nodejs/node/pull/24153)
+* [[`704d886000`](https://github.com/nodejs/node/commit/704d886000)] - **test**: correct order of args in assert.strictEqual() (Natalie Cluer) [#24157](https://github.com/nodejs/node/pull/24157)
+* [[`63dc2214f9`](https://github.com/nodejs/node/commit/63dc2214f9)] - **test**: add test case for completion bash flag (Aivo Paas) [#24168](https://github.com/nodejs/node/pull/24168)
+* [[`dd67f39ae2`](https://github.com/nodejs/node/commit/dd67f39ae2)] - **test**: add test for deepEqual Float32Array (Yehiyam Livneh) [#24164](https://github.com/nodejs/node/pull/24164)
+* [[`2359273868`](https://github.com/nodejs/node/commit/2359273868)] - **test**: fix arguments order in assert.strictEqual() (UlisesSantana Suárez) [#24192](https://github.com/nodejs/node/pull/24192)
+* [[`3bb63721e3`](https://github.com/nodejs/node/commit/3bb63721e3)] - **test**: fix assert.strictEqual argument order (John Mc Quillan) [#24172](https://github.com/nodejs/node/pull/24172)
+* [[`a6f786dee9`](https://github.com/nodejs/node/commit/a6f786dee9)] - **test**: replacing fixture directory with temp (saurabhSiddhu) [#24077](https://github.com/nodejs/node/pull/24077)
+* [[`704b68aee4`](https://github.com/nodejs/node/commit/704b68aee4)] - **test**: increase coverage internal readline (Berry de Witte) [#24150](https://github.com/nodejs/node/pull/24150)
+* [[`d8ac55a012`](https://github.com/nodejs/node/commit/d8ac55a012)] - **test**: use NULL instead of 0 in common.h (Daniel Bevenius)[#24104](https://github.com/nodejs/node/pull/24104)
+* [[`4b9518dba3`](https://github.com/nodejs/node/commit/4b9518dba3)] - **test**: move test-fs-watch-system-limit from sequential to pummel (Marcus Scott) [#23692](https://github.com/nodejs/node/pull/23692)
+* [[`4054c24cac`](https://github.com/nodejs/node/commit/4054c24cac)] - **test**: fix uses of deprecated assert.fail with multiple args (ivan.filenko) [#23673](https://github.com/nodejs/node/pull/23673)
+* [[`c417c7a89a`](https://github.com/nodejs/node/commit/c417c7a89a)] - **test**: use assert.strictEqual instead of assert.equal (ivan.filenko) [#23673](https://github.com/nodejs/node/pull/23673)
+* [[`1b5b1cc08b`](https://github.com/nodejs/node/commit/1b5b1cc08b)] - **test**: add test for strictDeepEqual (Nikita Malyschkin) [#24197](https://github.com/nodejs/node/pull/24197)
+* [[`cd2dedfa4f`](https://github.com/nodejs/node/commit/cd2dedfa4f)] - **test**: add coverage for systemerror set name (Amer Alimanović) [#24200](https://github.com/nodejs/node/pull/24200)
+* [[`9fa71468f5`](https://github.com/nodejs/node/commit/9fa71468f5)] - **test**: fix order of arguments in assert.strictEqual (Alex Seifert) [#24145](https://github.com/nodejs/node/pull/24145)
+* [[`2d6e942035`](https://github.com/nodejs/node/commit/2d6e942035)] - **test**: add test for 'ERR\_INVALID\_CALLBACK' (razvanbh) [#24224](https://github.com/nodejs/node/pull/24224)
+* [[`540b741ae2`](https://github.com/nodejs/node/commit/540b741ae2)] - **test**: add coverage for escape key switch case (Artur Daschevici) [#24194](https://github.com/nodejs/node/pull/24194)
+* [[`53b12c3731`](https://github.com/nodejs/node/commit/53b12c3731)] - **test**: fix NewFromUtf8 compiler warning (Daniel Bevenius) [#24216](https://github.com/nodejs/node/pull/24216)
+* [[`8e9ff69d7f`](https://github.com/nodejs/node/commit/8e9ff69d7f)] - **test**: add error code tests in dgram test (Mark Arranz) [#24215](https://github.com/nodejs/node/pull/24215)
+* [[`e57a5c3734`](https://github.com/nodejs/node/commit/e57a5c3734)] - **test**: fix order of arguments in test-delayed-require assertion (reineke-fox) [#24165](https://github.com/nodejs/node/pull/24165)
+* [[`d7a3a3bd9f`](https://github.com/nodejs/node/commit/d7a3a3bd9f)] - **test**: change arguments order in strictEqual (Paul Isache)[#24156](https://github.com/nodejs/node/pull/24156)
+* [[`efd697bc57`](https://github.com/nodejs/node/commit/efd697bc57)] - **test**: switch order of strictEqual arguments (Jonah Polack) [#24185](https://github.com/nodejs/node/pull/24185)
+* [[`9052a22dd1`](https://github.com/nodejs/node/commit/9052a22dd1)] - **test**: fix the arguments order in `assert.strictEqual` (mzucker) [#24227](https://github.com/nodejs/node/pull/24227)
+* [[`d7722dd9d8`](https://github.com/nodejs/node/commit/d7722dd9d8)] - **test**: fix the arguments order in `assert.strictEqual` (mzucker) [#24226](https://github.com/nodejs/node/pull/24226)
+* [[`2e0d3c9de9`](https://github.com/nodejs/node/commit/2e0d3c9de9)] - **test**: fix order in assert.strictEqual to actual, expected(Kevin Seidel) [#24184](https://github.com/nodejs/node/pull/24184)
+* [[`b63e9cb3fe`](https://github.com/nodejs/node/commit/b63e9cb3fe)] - **test**: fix arguments order in assert.strictEqual (szabolcsit) [#24143](https://github.com/nodejs/node/pull/24143)
+* [[`e0c6f5cbf7`](https://github.com/nodejs/node/commit/e0c6f5cbf7)] - **test**: fix assert argument order (Manish Poddar) [#24160](https://github.com/nodejs/node/pull/24160)
+* [[`fc84ccd0f0`](https://github.com/nodejs/node/commit/fc84ccd0f0)] - **test**: removed extraneous argument 's' (Jackson Chui) [#24213](https://github.com/nodejs/node/pull/24213)
+* [[`90f98905f1`](https://github.com/nodejs/node/commit/90f98905f1)] - **test**: fix arguments order in test-fs-write-buffer (razvanbh) [#24155](https://github.com/nodejs/node/pull/24155)
+* [[`1588fba73f`](https://github.com/nodejs/node/commit/1588fba73f)] - **test**: fix argument order in assert.strictEqual() (Clement) [#24147](https://github.com/nodejs/node/pull/24147)
+* [[`f46fa9072a`](https://github.com/nodejs/node/commit/f46fa9072a)] - **test**: switch arguments in strictEqual (Mathieu Pavageau) [#24141](https://github.com/nodejs/node/pull/24141)
+* [[`8f2bdaca69`](https://github.com/nodejs/node/commit/8f2bdaca69)] - **test**: fix arguments order (Simona Cotin) [#24151](https://github.com/nodejs/node/pull/24151)
+* [[`380789eb68`](https://github.com/nodejs/node/commit/380789eb68)] - **test**: fixe argument order in assert.strictEqual (Marc Posth) [#24140](https://github.com/nodejs/node/pull/24140)
+* [[`cd07b02472`](https://github.com/nodejs/node/commit/cd07b02472)] - **test**: fixing arguments order in `assert.strictEqual()` (G. Carcaci) [#24152](https://github.com/nodejs/node/pull/24152)
+* [[`6e8fa5361a`](https://github.com/nodejs/node/commit/6e8fa5361a)] - **test**: add tests for OutgoingMessage setTimeout (Robin Drexler) [#24148](https://github.com/nodejs/node/pull/24148)
+* [[`abf9bd15db`](https://github.com/nodejs/node/commit/abf9bd15db)] - **test**: swap expected and actual in assert.strictEqual (Florin-Daniel BÎLBÎE) [#24146](https://github.com/nodejs/node/pull/24146)
+* [[`f0eee63ee0`](https://github.com/nodejs/node/commit/f0eee63ee0)] - **test**: fix assert parameter order (Roland Broekema) [#24144](https://github.com/nodejs/node/pull/24144)
+* [[`78a320130d`](https://github.com/nodejs/node/commit/78a320130d)] - **test**: change order of assert.strictEqual() (Remy Parzinski) [#24142](https://github.com/nodejs/node/pull/24142)
+* [[`64fd19f102`](https://github.com/nodejs/node/commit/64fd19f102)] - **test**: fix invalid argument order in test-http-expect-continue.js (Morgan Roderick) [#24138](https://github.com/nodejs/node/pull/24138)
+* [[`2d88af354f`](https://github.com/nodejs/node/commit/2d88af354f)] - **test**: strictEqual argument order (actual, expected) (Ahmad Nassri) [#24137](https://github.com/nodejs/node/pull/24137)
+* [[`11a84a7b32`](https://github.com/nodejs/node/commit/11a84a7b32)] - **test**: swap the order of arguments (Musa Hamwala) [#24134](https://github.com/nodejs/node/pull/24134)
+* [[`e599889649`](https://github.com/nodejs/node/commit/e599889649)] - **test**: fs readfile, swap arguments in strictEqual (Petar Dodev) [#24133](https://github.com/nodejs/node/pull/24133)
+* [[`c37b3196b6`](https://github.com/nodejs/node/commit/c37b3196b6)] - **test**: fix arguments order (Fran Herrero) [#24131](https://github.com/nodejs/node/pull/24131)
+* [[`74f1dad613`](https://github.com/nodejs/node/commit/74f1dad613)] - **test**: http-client-timeout error assert arguments (Tadhg Creedon) [#24130](https://github.com/nodejs/node/pull/24130)
+* [[`b16311b19f`](https://github.com/nodejs/node/commit/b16311b19f)] - **test**: mark test-vm-timeout-\* known issue tests flaky (James M Snell) [#23743](https://github.com/nodejs/node/pull/23743)
+* [[`1ec6923276`](https://github.com/nodejs/node/commit/1ec6923276)] - **test** : compare objects not identical by reference (Marie Terrier) [#24189](https://github.com/nodejs/node/pull/24189)
+* [[`3170cb49d8`](https://github.com/nodejs/node/commit/3170cb49d8)] - **tls**: throw if protocol too long (Andre Jodat-Danbrani) [#23606](https://github.com/nodejs/node/pull/23606)
+* [[`a1d7ed7de6`](https://github.com/nodejs/node/commit/a1d7ed7de6)] - **tracing**: fix static destruction order issue (Anna Henningsen) [#24123](https://github.com/nodejs/node/pull/24123)
+* [[`8c107a37f9`](https://github.com/nodejs/node/commit/8c107a37f9)] - **url**: make the context non-enumerable (Joyee Cheung) [#24218](https://github.com/nodejs/node/pull/24218)
+* [[`c6a43fa2ef`](https://github.com/nodejs/node/commit/c6a43fa2ef)] - **zlib**: do not leak on destroy (Mathias Buus) [#23734](https://github.com/nodejs/node/pull/23734)
 
 <a id="10.15.0"></a>
 ## 2018-12-26, Version 10.15.0 'Dubnium' (LTS), @MylesBorins
