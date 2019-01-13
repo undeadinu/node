@@ -10,8 +10,8 @@ export abstract class View {
   abstract deleteContent(): void;
   abstract detachSelection(): Set<string>;
 
-  constructor(id) {
-    this.container = document.getElementById(id);
+  constructor(idOrContainer: string | HTMLElement) {
+    this.container = typeof idOrContainer == "string" ? document.getElementById(idOrContainer) : idOrContainer;
     this.divNode = this.createViewElement();
   }
 
@@ -19,18 +19,18 @@ export abstract class View {
     return false;
   }
 
-  show(data, rememberedSelection): void {
-    this.container.appendChild(this.divNode);
+  show(data: any, rememberedSelection: Selection): void {
     this.initializeContent(data, rememberedSelection);
+    this.container.appendChild(this.divNode);
   }
 
   hide(): void {
-    this.deleteContent();
     this.container.removeChild(this.divNode);
+    this.deleteContent();
   }
 }
 
 export interface PhaseView {
-  onresize();
-  searchInputAction(searchInput: HTMLInputElement, e: Event);
+  onresize(): void;
+  searchInputAction(searchInput: HTMLInputElement, e: Event): void;
 }
